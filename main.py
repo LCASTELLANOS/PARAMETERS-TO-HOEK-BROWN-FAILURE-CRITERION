@@ -42,7 +42,7 @@ def evaluate(A, B, sci, stn):
                             "mi": mi,
                             "GSI": gsi,
                             "s1": s1_teo.tolist(),
-                            "res": np.mean(abs(s1_teo - s1)/100),
+                            "res": np.mean(abs(s1_teo - s1)),
                             }
                         )
 
@@ -56,7 +56,7 @@ st.title("Resultados")
 st.write(f'GSI: {result["GSI"]:.0f}')
 st.write(f'D: {result["D"]:.2f}')
 st.write(f'mi: {result["mi"]:.2f}')
-st.write(f'error: {result["res"]:.2f}')
+st.write(f'error: {result["res"]:.4f}')
 
 st.title("Referencias")
 st.write('Hoek E., Brown E.T. (1980) “Empirical strength criterion for rock masses”. J. Geotech. Engng Div., ASCE 106(GT9), 1013-1035')

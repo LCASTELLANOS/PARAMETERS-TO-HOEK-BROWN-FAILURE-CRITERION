@@ -55,7 +55,7 @@ result = evaluate(A, B, sci, stn)
 st.title("Resultados")
 st.write(f'GSI: {result["GSI"]:.0f}')
 st.write(f'D: {result["D"]:.2f}')
-st.write(f'MI: {result["mi"]:.2f}')
+st.write(f'mi: {result["mi"]:.2f}')
 st.write(f'error: {result["res"]:.2f}')
 
 st.title("Referencias")

@@ -58,5 +58,5 @@ st.write(f'MI: {result["mi"]:.2f}')
 st.write(f'error: {result["res"]:.2f}')
 
 st.title("Referencias")
-st.write('Hoek E., Brown E.T. (1980) “Empirical strength criterion for rock masses”. J. Geotech. Engng Div., ASCE 
-106(GT9), 1013-1035')
+st.write('Hoek E., Brown E.T. (1980) “Empirical strength criterion for rock masses”. J. Geotech. Engng Div., ASCE 106(GT9), 1013-1035')
+

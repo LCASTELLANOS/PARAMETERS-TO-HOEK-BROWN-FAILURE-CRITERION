@@ -1,6 +1,7 @@
 import numpy as np
 import streamlit as st
 
+st.title("Cálculo de los parámetros GSI, D y mi del criterio de falla de Hoek-Brown a partir de la ecuación potencial normalizada")
 
 A = st.number_input('Valor de "A": ',value=0.16113, format="%.10f")
 B = st.number_input('Valor de "B"',value=0.71346, format="%.10f")

@@ -4,7 +4,7 @@ import streamlit as st
 
 A = st.number_input('Valor de "A": ',value=0.16113, format="%.10f")
 B = st.number_input('Valor de "B"',value=0.71346, format="%.10f")
-stn = st.number_input('Valor del esfuerzo de tensión "𝜎𝑡"',value=-2.53E-04, format="%.10f")
+stn = st.number_input('Valor del esfuerzo de tensión normalizado "𝜎𝑡n"',value=-2.53E-04, format="%.10f")
 sci = st.number_input('Valor de resistencia a la compresión inconfinada de la roca intacta "𝜎ci [kPa]"',value=99600.0, format="%.10f")
 
 
@@ -56,3 +56,7 @@ st.write(f'GSI: {result["GSI"]:.0f}')
 st.write(f'D: {result["D"]:.2f}')
 st.write(f'MI: {result["mi"]:.2f}')
 st.write(f'error: {result["res"]:.2f}')
+
+st.title("Referencias")
+st.write('Hoek E., Brown E.T. (1980) “Empirical strength criterion for rock masses”. J. Geotech. Engng Div., ASCE 
+106(GT9), 1013-1035')

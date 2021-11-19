@@ -42,7 +42,7 @@ def evaluate(A, B, sci, stn):
                             "mi": mi,
                             "GSI": gsi,
                             "s1": s1_teo.tolist(),
-                            "res": np.mean(abs(s1_teo - s1)),
+                            "res": np.mean(abs(s1_teo - s1)/100),
                             }
                         )
 

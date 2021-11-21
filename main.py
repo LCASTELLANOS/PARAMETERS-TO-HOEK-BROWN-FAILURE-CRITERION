@@ -11,7 +11,7 @@ sci = st.number_input('Valor de resistencia a la compresión inconfinada de la r
 
 def evaluate(A, B, sci, stn):
     
-    n_dots = 10000
+    n_dots = 20000
     n = np.linspace(2, 300, n_dots)
     sn = n / sci
 

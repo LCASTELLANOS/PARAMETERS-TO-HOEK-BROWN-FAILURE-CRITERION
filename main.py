@@ -3,16 +3,16 @@ import streamlit as st
 
 st.write("Cálculo de los parámetros GSI, D y mi del criterio de falla de Hoek-Brown a partir de la ecuación potencial normalizada de la envolvente de falla en el plano τ vs. σ.")
 
-A = st.number_input('Valor de "A": ',value=0.16113, format="%.10f")
-B = st.number_input('Valor de "B"',value=0.71346, format="%.10f")
+A = st.number_input('Valor de "A" normalizado: ',value=0.16113, format="%.10f")
+B = st.number_input('Valor de "B" normalizado: ',value=0.71346, format="%.10f")
 stn = st.number_input('Valor del esfuerzo de tensión normalizado "𝜎𝑡n"',value=-2.53E-04, format="%.10f")
 sci = st.number_input('Valor de resistencia a la compresión inconfinada de la roca intacta "𝜎ci [kPa]"',value=99600.0, format="%.10f")
 
 
 def evaluate(A, B, sci, stn):
     
-    n_dots = 10000
-    n = np.linspace(2, 3, n_dots)
+    n_dots = 100000
+    n = np.linspace(1, 1000, n_dots)
     sn = n / sci
 
     tn = A * (sn - stn) ** B

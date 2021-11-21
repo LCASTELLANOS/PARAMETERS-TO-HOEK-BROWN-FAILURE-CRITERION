@@ -12,7 +12,7 @@ sci = st.number_input('Valor de resistencia a la compresión inconfinada de la r
 def evaluate(A, B, sci, stn):
     
     n_dots = 12500
-    n = np.linspace(0.1, 50, n_dots)
+    n = np.linspace(0.1, 70, n_dots)
     sn = n / sci
 
     tn = A * (sn - stn) ** B
@@ -56,7 +56,7 @@ st.title("Resultados")
 st.write(f'GSI: {result["GSI"]:.0f}')
 st.write(f'D: {result["D"]:.2f}')
 st.write(f'mi: {result["mi"]:.2f}')
-st.write(f'error: {result["res"]:.4f}')
+st.write(f'error [kPa]: {result["res"]:.4f}')
 
 st.title("Referencias")
 st.write('Hoek E., Brown E.T. (1980) “Empirical strength criterion for rock masses”. J. Geotech. Engng Div., ASCE 106(GT9), 1013-1035')
